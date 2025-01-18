@@ -6,11 +6,14 @@ const getData = async()=>{
    }
    return res.json();
   }
-  
+  type Props ={
+    _id: number;
+    product: object;
+}
   export const getSingleProduct = async (_id:number)=>{
     const items = await getData();
     /* console.log(item); */
-    const singleItem = items.find( (product: )=> product._id === _id )
+    const singleItem = items.find( (product:Props )=> product._id === _id )
    return singleItem;
     
 

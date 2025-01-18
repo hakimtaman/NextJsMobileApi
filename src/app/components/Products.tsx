@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link"; 
+import Image from "next/image"; 
+
 
 interface ProductProps {
   _id: number;
@@ -25,7 +27,7 @@ interface Props{
         
           <Link href={{pathname:"/singleproduct", query:{_id: product?._id}}} key={product?._id} > 
             <div className=" border-[1px] border-gray-300 rounded-md overflow-hidden hover:border-gray-950 duration-300">
-              <img 
+              <Image 
                 src={product?.image} 
                 width={500}
                 height={500}
