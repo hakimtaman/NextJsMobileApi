@@ -1,8 +1,9 @@
 import { getSingleProduct } from '@/helpers';
-import { log } from 'node:console'
 import React from 'react'
-
-const SingleProduct = async ({searchParams}: any) => {
+type Props = {
+  searchParams: {[key: string]:string | string[] | undefined};
+};
+const SingleProduct = async ({searchParams}: Props) => {
     /* console.log(searchParams._id); */
     const idString = searchParams?._id;
     const _id =Number (idString);

@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Tittle from "./components/Tittle";
+
 const getData = async()=>{
   const res = await fetch("https://jsonserver.reactbd.com/phone")
  if(!res.ok){

@@ -10,7 +10,7 @@ const getData = async()=>{
   export const getSingleProduct = async (_id:number)=>{
     const items = await getData();
     /* console.log(item); */
-    const singleItem = items.find( (product: any)=> product._id === _id )
+    const singleItem = items.find( (product: )=> product._id === _id )
    return singleItem;
     
 
